@@ -1,21 +1,35 @@
 # TransBridge UI
 
-TransBridge UI 是一个基于 React 的翻译工具前端界面，支持文本翻译和手写文字识别功能。
-(TransBridge项目地址)[https://github.com/fruitbars/transbridge#readme]
+
+TransBridge UI 是 TransBridge 项目的官方前端界面，基于 React + TypeScript + Vite 构建，提供文本翻译和手写文字识别功能。
+
+## 相关项目
+
+- [TransBridge](https://github.com/fruitbars/transbridge) - TransBridge 后端服务
 
 ## 功能特点
 
-- 文本翻译功能
+- 文本翻译功能（支持多种语言互译）
 - 手写文字识别（基于百度 OCR API）
-- 响应式设计
-- 现代化 UI 界面
+- 响应式设计，支持多端适配
+- 现代化 UI 界面，基于 Tailwind CSS
+- 完整的 TypeScript 类型支持
+- 开发环境热重载
+
+## 技术栈
+
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- Axios
 
 ## 环境要求
 
-- Node.js >= 14.0.0
-- npm >= 6.0.0 或 yarn >= 1.22.0
+- Node.js >= 16.0.0
+- npm >= 7.0.0 或 yarn >= 1.22.0
 
-## 安装步骤
+## 快速开始
 
 1. 克隆项目
 ```bash
@@ -68,32 +82,34 @@ npm run build
 yarn build
 ```
 
+
+##TransBridge API 文档
+
+项目提供了完整的 API 文档入口，您可以通过以下方式访问：
+
+
+   - 访问 `http://localhost:3000/api-docs.html` 查看 API 文档
+
+
+
+
+API 文档提供了以下功能：
+- 详细的接口说明和参数描述
+- 在线接口调试功能
+- 请求/响应示例
+- 错误码说明
+- 认证方式说明
+
 ## API 使用说明
 
-### 1. 翻译服务 API
+### 翻译服务 API
 transapi:
   tokens:
     - ""
 
-4. 将密钥填入 `.env` 文件的 `REACT_APP_TRANSLATE_API_KEY` 中
+ 将密钥填入 `.env` 文件的 `REACT_APP_TRANSLATE_API_KEY` 中
 
 
-
-## API 代理配置
-
-项目使用 Nginx 作为反向代理，配置文件位于 `nginx.conf`。主要配置说明：
-
-```nginx
-# API 代理配置
-location /api/ {
-    proxy_pass http://localhost:3000/;  # 开发环境地址，生产环境请修改为实际地址
-    proxy_http_version 1.1;
-    proxy_set_header Upgrade $http_upgrade;
-    proxy_set_header Connection 'upgrade';
-    proxy_set_header Host $host;
-    proxy_cache_bypass $http_upgrade;
-}
-```
 
 配置说明：
 1. 开发环境：
@@ -120,10 +136,29 @@ location /api/ {
    - 确保正确配置环境变量
    - 使用 Nginx 作为反向代理（配置文件已提供）
 
-## 技术支持
 
-如有问题，请提交 Issue 或联系技术支持。
+## 项目结构
+
+```
+transbridge-ui/
+├── src/                # 源代码目录
+│   ├── components/    # React 组件
+│   ├── pages/        # 页面组件
+│   ├── services/     # API 服务
+│   ├── types/        # TypeScript 类型定义
+│   └── utils/        # 工具函数
+├── public/           # 静态资源
+└── ...配置文件
+```
+
+
+
+## 贡献指南
+
+欢迎提交 Issue 和 Pull Request 来帮助改进项目。
 
 ## 许可证
 
-[许可证类型]
+MIT License
+
+
