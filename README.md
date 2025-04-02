@@ -1,13 +1,15 @@
 # TransBridge UI
 
+<img width="982" alt="截屏2025-04-03 03 09 32" src="https://github.com/user-attachments/assets/b674d966-1538-4f49-8371-83d905eabea0" />
 
-TransBridge UI 是 TransBridge 项目的官方前端界面，基于 React + TypeScript + Vite 构建，提供文本翻译和手写文字识别功能。
+TransBridge UI 是 TransBridge 项目的前端界面，基于 React + TypeScript + Vite 构建，提供文本翻译和手写文字识别功能。
 
 ## 相关项目
 
 - [TransBridge](https://github.com/fruitbars/transbridge) - TransBridge 后端服务
 
 ## 功能特点
+
 
 - 文本翻译功能（支持多种语言互译）
 - 手写文字识别（基于百度 OCR API）
@@ -160,5 +162,9 @@ transbridge-ui/
 ## 许可证
 
 MIT License
+<img width="1006" alt="截屏2025-04-03 03 05 34" src="https://github.com/user-attachments/assets/427deb27-a498-4dd5-8c32-9dca947b079c" />
+<img width="1056" alt="截屏2025-04-03 03 06 20" src="https://github.com/user-attachments/assets/4d5b311f-4d01-4c4e-8565-c58fdd542dc5" />
+<img width="1017" alt="截屏2025-04-03 03 06 03" src="https://github.com/user-attachments/assets/29759041-f07c-4f9d-a6d9-d93421638318" />
+
 
 
