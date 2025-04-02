@@ -1,6 +1,7 @@
 # TransBridge UI
 
 TransBridge UI 是一个基于 React 的翻译工具前端界面，支持文本翻译和手写文字识别功能。
+TransBridge项目地址： [https://github.com/fruitbars/transbridge#readme]
 
 ## 功能特点
 
